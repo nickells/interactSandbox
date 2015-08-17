@@ -1,6 +1,9 @@
+$(document).ready(function(){
 $('#Add').on('click',function(){
   //attempt to make more boxes, didn't work
+  console.log("hey!")
   $('#Add').after('<div id="yes-drop" class="draggable drag-drop resize-drag"> #yes-drop </div>')
+})
 })
 
 interact('.draggable')
@@ -104,4 +107,5 @@ interact('.dropzone').dropzone({
     event.target.classList.remove('drop-target');
   }
 });
+
 

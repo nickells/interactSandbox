@@ -7,6 +7,7 @@
 }
 
 .dropzone {
+  display: flex;
   background-color: #ccc;
   border: dashed 4px transparent;
   border-radius: 4px;
@@ -27,6 +28,7 @@
 }
 
 .drag-drop {
+  flex-grow: 1;
   display: inline-block;
   min-width: 40px;
   padding: 2em 0.5em;
