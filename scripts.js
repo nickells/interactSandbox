@@ -1,5 +1,5 @@
 $('#Add').on('click',function(){
-
+  //attempt to make more boxes, didn't work
   $('#Add').after('<div id="yes-drop" class="draggable drag-drop resize-drag"> #yes-drop </div>')
 })
 
@@ -81,6 +81,7 @@ interact('.dropzone').dropzone({
   },
   ondrop: function (event) {
     event.relatedTarget.textContent = 'Dropped';
+    //appends to dom
     $(event.target).append(event.relatedTarget)
     interact('.draggable')
     .draggable({
@@ -92,6 +93,7 @@ interact('.dropzone').dropzone({
     }
   })
     console.log(event.relatedTarget.style)
+      //fixes positioning
      $(event.relatedTarget).removeAttr("style").removeAttr('data-x').removeAttr('data-y')
 
 
